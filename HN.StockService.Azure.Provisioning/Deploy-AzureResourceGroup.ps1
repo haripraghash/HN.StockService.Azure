@@ -9,7 +9,7 @@ Param(
     [string] $TemplateFile = 'azuredeploy.json',
     [string] $TemplateParametersFile = 'azuredeploy.parameters.json',
     [string] $ArtifactStagingDirectory = '.',
-    [string] $DSCSourceFolder = 'DSC,
+    [string] $DSCSourceFolder = 'DSC',
 	[string] $AzureUserName,
 	[string] $AzurePassword,
     [switch] $ValidateOnly
