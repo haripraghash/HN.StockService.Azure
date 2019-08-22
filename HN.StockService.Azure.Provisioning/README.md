@@ -11,7 +11,7 @@ This template deploys **Azure Web App Analytics Solution** on an Azure Log Analy
 
 `Tags: Azure Web App, OMS Log Analytics, Monitoring`
 
-The Azure Web Apps Analytics solution provides insights into your [Azure Web Apps](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-overview) by collecting different metrics across all your Azure Web App resources. With the solution, you can analyze and search for web app resource metric data.
+The Azure Web Apps Analytics solution provide insights into your [Azure Web Apps](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-overview) by collecting different metrics across all your Azure Web App resources. With the solution, you can analyze and search for web app resource metric data.
 
 Using the solution, you can view the:
 
