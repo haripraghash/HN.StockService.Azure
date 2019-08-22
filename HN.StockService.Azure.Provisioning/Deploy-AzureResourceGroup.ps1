@@ -9,7 +9,9 @@ Param(
     [string] $TemplateFile = 'azuredeploy.json',
     [string] $TemplateParametersFile = 'azuredeploy.parameters.json',
     [string] $ArtifactStagingDirectory = '.',
-    [string] $DSCSourceFolder = 'DSC',
+    [string] $DSCSourceFolder = 'DSC,
+	[string] $AzureUserName,
+	[string] $AzurePassword,
     [switch] $ValidateOnly
 )
 
@@ -19,6 +21,9 @@ try {
 
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version 3
+
+$secpasswd = ConvertTo-SecureString $AzurePassword -AsPlainText -Force
+$mycreds = New-Object System.Management.Automation.PSCredential ($AzureUserName, $secpasswd)
 
 function Format-ValidationOutput {
     param ($ValidationOutput, [int] $Depth = 0)
