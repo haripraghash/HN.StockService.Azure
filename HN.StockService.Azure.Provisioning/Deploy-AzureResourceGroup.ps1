@@ -24,6 +24,7 @@ Set-StrictMode -Version 3
 
 $secpasswd = ConvertTo-SecureString $AzurePassword -AsPlainText -Force
 $mycreds = New-Object System.Management.Automation.PSCredential ($AzureUserName, $secpasswd)
+Connect-AzAccount -Credential $mycreds
 
 function Format-ValidationOutput {
     param ($ValidationOutput, [int] $Depth = 0)
